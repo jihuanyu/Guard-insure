@@ -113,7 +113,7 @@ export default {
       z-index: 9;
       margin-bottom: 40px;
       ul {
-        background: #000;
+        background: #fff;
         width: 160px;
         display: flex;
         flex-direction: column;
@@ -131,7 +131,7 @@ export default {
             height: 16px;
           }
           &:hover {
-            background: #1d1d1d;
+            background: #d0d8d8;
           }
         }
       }

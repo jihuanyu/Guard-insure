@@ -9,7 +9,7 @@
       </button>
       <button
         @click="handleClickType('sell')"
-        :class="type == 'sell' ? 'active' : ''"
+        :class="type == 'sell' ? 'active1' : ''"
       >
         {{ $t("Type.ToInsurance") }}
       </button>
@@ -99,19 +99,19 @@ export default {
 @import "~/assets/css/base.scss";
 @media screen and(min-width:750px) {
   .insurance_center {
-    margin-bottom: 10px;
+    width: 1080px;
+    margin: 0 auto;
     background: #fff;
     padding: 40px 60px;
   }
   .buy-type {
-    background: #f7f7fa;
+    background: #fff;
     width: 100%;
     display: flex;
     height: 50px;
-    border-bottom: 2px solid #ff9600;
-    border-radius: 3px 3px 0px 0px;
     overflow: hidden;
     button {
+      transform: skew(0 0 30px 0);
       border: none;
       outline: none;
       flex: 1;
@@ -120,12 +120,28 @@ export default {
       font-size: 16px;
       font-weight: bold;
       color: #121212;
-      border-radius: 3px 3px 0px 0px;
       background: #f7f7fa;
+      &:first-child {
+        background: linear-gradient(-59deg, transparent 25px, #f7f7fa 0) top
+          right;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+      }
+      &:last-child {
+        background-size: 100% 100%;
+        background: linear-gradient(120deg, transparent 25px, #f7f7fa 0) top
+          left;
+
+        background-repeat: no-repeat;
+      }
     }
     .active {
-      background: #ff9600;
       color: #fff;
+      background: linear-gradient(-59deg, transparent 25px, #4364e8 0) top right !important;
+    }
+    .active1 {
+      color: #fff;
+      background: linear-gradient(120deg, transparent 25px, #4364e8 0) top left !important;
     }
   }
 }

@@ -1,5 +1,6 @@
 <template>
   <div class="trade_title">
+    <img src="~/assets/img/helmet/banner_ill.png" alt="" />
     <div class="text">
       <h3>{{ $t("Banner.Title") }}</h3>
       <span>{{ $t("Banner.Text") }}</span>
@@ -17,27 +18,28 @@ export default {
 
 <style lang='scss' scoped>
 .trade_title {
-  height: 220px;
+  height: 360px;
   background: #ffffff;
   margin-bottom: 15px;
   padding: 0 60px;
   display: flex;
   justify-content: space-between;
-  background-image: url("../../assets/img/helmet/banner_ill.png");
-  background-size: 344px 200px;
-  background-position: 95% 20px;
-  background-repeat: no-repeat;
+  align-items: center;
+  img {
+    width: 613px;
+    height: 360px;
+  }
   .text {
+    margin-left: 40px;
     h3 {
-      width: 373px;
-      font-size: 24px;
-      font-weight: 600;
+      font-size: 28px;
       color: #121212;
-      line-height: 33px;
-      margin: 64px 0 16px 0;
+      line-height: 40px;
+      margin-bottom: 20px;
     }
     span {
       color: #919aa6;
+      font-size: 12px;
       line-height: 20px;
     }
   }

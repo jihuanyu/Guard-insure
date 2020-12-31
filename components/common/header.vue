@@ -155,11 +155,12 @@ export default {
           left: 0px;
           bottom: 0px;
           width: 100%;
-          height: 2px;
-          background: #ff9600;
+          height: 5px;
+          background: #4364e8;
         }
         &.active,
         &.nuxt-link-exact-active {
+          color: #4364e8;
           &::after {
             display: block;
           }

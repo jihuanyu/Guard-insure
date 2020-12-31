@@ -452,7 +452,7 @@ export default {
 }
 
 .main-container {
-  background: #f7f7fa;
+  background: #fff;
 }
 @media screen and (min-width: 750px) {
   .cut_line {
